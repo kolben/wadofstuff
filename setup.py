@@ -2,13 +2,13 @@ from distutils.core import setup
 
 import wadofstuff.django.serializers
 
-README = open('README').read().strip() + "\n\n"
+README = open('README.md').read().strip() + "\n\n"
 ChangeLog = \
     "What's new\n" + \
     "==========\n" + \
     "\n" + \
     open('ChangeLog').read().strip()
-  
+
 LONG_DESCRIPTION = README + ChangeLog
 
 setup(

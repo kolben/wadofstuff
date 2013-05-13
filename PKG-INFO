@@ -1,6 +1,6 @@
 Metadata-Version: 1.0
 Name: wadofstuff-django-serializers
-Version: 1.1.0
+Version: 1.1.1
 Summary: Extended serializers for Django.
 Home-page: http://code.google.com/p/wadofstuff/
 Author: Matthew Flanagan
@@ -9,24 +9,24 @@ License: UNKNOWN
 Download-URL: http://wadofstuff.googlecode.com/files/wadofstuff-django-serializers-1.1.0.tar.gz
 Description: Extended Django Serializer Module
         =================================
-        
+
         The wadofstuff.django.serializers python module extends Django's built-in
         serializers, adding 3 new capabilities inspired by the Ruby on Rails JSON
         serializer. These parameters allow the developer more control over how their
         models are serialized.
-        
+
         The additional capabilities are:
-        
+
         - excludes - a list of fields to be excluded from serialization. The
         excludes list takes precedence over the fields argument.
         - extras - a list of non-model field properties or callables to be
         serialized.
         - relations - a list or dictionary of model related fields to be followed
         and serialized.
-        
+
         Example of serializing a relation
         ---------------------------------
-        
+
         >>> serializers.serialize('json', Group.objects.all(), indent=4, relations=('permissions',))
         [
         {
@@ -48,16 +48,16 @@ Description: Extended Django Serializer Module
         }
         }
         ]
-        
+
         What's new
         ==========
-        
+
         Version 1.1.0:
-        
+
         - Added support for "natural keys" as implemented in Django.
-        
+
         Version 1.0.0:
-        
+
         - First public release.
 Keywords: django json serializer
 Platform: UNKNOWN
